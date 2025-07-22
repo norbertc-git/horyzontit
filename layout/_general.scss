@@ -89,34 +89,54 @@ input, select, textarea {
     position: absolute;
 
     &--1 {
-    width: 37.69px;
-    height: 37.69px;
-    top: 236px;
-    left: 91px;
-    border-radius: 5px;
-    rotate: 66.75deg;
-    background-color: #EB8125;
+        width: 37.69px;
+        height: 37.69px;
+        top: 236px;
+        left: 91px;
+        border-radius: 5px;
+        rotate: 66.75deg;
+        background-color: #EB8125;
     }  
 
   &--2 {
-    width: 388.37px;
-    height: 388.37px;
-    top: 176px;
-    right: -200px;
-    border-radius: 15px;
-    rotate: 60deg;
-    opacity: 15%;
-    background-color: #2563EB;
+        width: 388.37px;
+        height: 388.37px;
+        top: 176px;
+        right: -200px;
+        border-radius: 15px;
+        rotate: 60deg;
+        opacity: 15%;
+        background-color: #2563EB;
     }
 
   &--3 {
-    width: 65.43px;
-    height: 65.43px;
-    top: 380px;
-    right: 163px;
-    border-radius: 10px;
-    border: 1px solid #EBC025;
-    rotate: 64.36deg;
-    z-index: -1;
+        width: 65.43px;
+        height: 65.43px;
+        top: 380px;
+        right: 163px;
+        border-radius: 10px;
+        border: 1px solid #EBC025;
+        rotate: 64.36deg;
+        z-index: -1;
+    }
+
+    &--4 {
+        width: 37.69px;
+        height: 37.69px;
+        top: 790px;
+        left: 42px;
+        border-radius: 5px;
+        rotate: 110.61deg;
+        background-color: #EBC025;
+    }
+
+    &--5 {
+        width: 388.37px;
+        height: 388.37px;
+        top: 300px;
+        left: -250px;
+        border-radius: 15px;
+        border: 1px dashed #1B9AED;
+        rotate: 200deg;
     }
 }

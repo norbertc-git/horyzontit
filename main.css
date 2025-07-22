@@ -118,6 +118,24 @@ input, select, textarea {
   rotate: 64.36deg;
   z-index: -1;
 }
+.square--4 {
+  width: 37.69px;
+  height: 37.69px;
+  top: 790px;
+  left: 42px;
+  border-radius: 5px;
+  rotate: 110.61deg;
+  background-color: #EBC025;
+}
+.square--5 {
+  width: 388.37px;
+  height: 388.37px;
+  top: 300px;
+  left: -250px;
+  border-radius: 15px;
+  border: 1px dashed #1B9AED;
+  rotate: 200deg;
+}
 
 body {
   font-family: "Inter", sans-serif;
