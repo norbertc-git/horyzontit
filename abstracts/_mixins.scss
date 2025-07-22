@@ -1,0 +1,17 @@
+@import 'breakpoints';
+
+@mixin for-size($breakpoint, $orientation: null) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @if $orientation != null {
+      @media (max-width: $breakpoint-value) and (orientation: #{$orientation}) {
+        @content;
+      }
+    } @else {
+      @media (max-width: $breakpoint-value) {
+        @content;
+      }
+    }
+  }
+}
