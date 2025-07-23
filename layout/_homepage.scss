@@ -1,0 +1,223 @@
+@keyframes kreskiChange {
+    0%   { background-image: none; }
+    33%  { background: url('imgs/Variant2.svg') no-repeat center/contain; }
+    66%  { background: url('imgs/Variant3.svg') no-repeat center/contain; }
+    100% { background: url('imgs/Variant4.svg') no-repeat center/contain; }
+}
+
+@keyframes obszarChange-1 {
+    0%   { background-image: none; }
+    100% { background: url('imgs/Group 10.svg') no-repeat center/contain; }
+}
+
+@keyframes obszarChange-2 {
+    0%   { background-image: none; }
+    100% { background: url('imgs/Group 11.svg') no-repeat center/contain; }
+}
+
+@keyframes obszarChange-3 {
+    0%   { background-image: none; }
+    100% { background: url('imgs/Group 8.svg') no-repeat center/contain; }
+}
+
+@keyframes obszarChange-4 {
+    0%   { background-image: none; }
+    100% { background: url('imgs/Group 9.svg') no-repeat center/contain; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp-2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.kreski {
+    display: flex;
+    justify-content: center;
+    margin: 3.5rem auto 0 auto;
+    width: 152px;
+    height: 13px;
+    background: none no-repeat center/contain;
+    animation: kreskiChange 1500ms ease-out 1ms forwards;
+
+    img {
+        visibility: hidden;
+        width: 100%;
+        height: auto;
+  }
+}
+
+.wspolpraca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem auto 0 auto;
+    width: 844px;
+    height: 366px;
+    opacity: 0;
+    animation: fadeInUp-2 2400ms ease-out 1700ms forwards;
+
+    h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 4rem;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: -2%;
+        text-align: center;
+        color: #000;
+        text-align: center;
+        opacity: 0;
+        animation: fadeInUp 600ms ease-out 650ms forwards;
+    }
+    h3 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+        color: #000;
+        opacity: 0.75;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        opacity: 0;
+        animation: fadeInUp 600ms ease-out 950ms forwards;
+    }
+}
+
+.przycisk-wspolpraca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20.5rem;
+    height: 4.75rem;
+    border-radius: 50px;
+    background-color: #1B9AED;
+    transition: width 0.3s ease, height 0.3s ease;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeInUp 600ms ease-out 1250ms forwards;
+
+    a {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #fff;
+        text-decoration: none;
+        transition: font-size 0.3s ease;
+    }
+    &:hover {
+        width: 24rem;
+        height: 5.5rem;
+
+        a {
+        font-size: 1.7rem;
+        }
+    }
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 93rem;
+    margin: 0.62rem auto 0 auto;
+
+    .obszar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 23%;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    #automatyzacja {
+        width: 54px;
+        height: 54px;
+        background: none no-repeat center/contain;
+        animation: obszarChange-1 100ms ease-out 2400ms forwards;
+            
+        img {
+            visibility: hidden;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #ecommerce {
+        width: 59px;
+        height: 54px;
+        background: none no-repeat center/contain;
+        animation: obszarChange-2 100ms ease-out 2400ms forwards;
+
+        img {
+            visibility: hidden;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #aplikacja {
+        width: 66px;
+        height: 66px;
+        background: none no-repeat center/contain;
+        animation: obszarChange-3 100ms ease-out 2400ms forwards;
+
+        img {
+            visibility: hidden;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #uslugi {
+        width: 69.5px;
+        height: 59.2px;
+        background: none no-repeat center/contain;
+        animation: obszarChange-4 100ms ease-out 2400ms forwards;
+
+        img {
+            visibility: hidden;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    h5 {
+        font-weight: 700;
+        font-style: bold;
+        font-size: 1.25rem;
+        //line-height: 1.5;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-top: 1.5rem;
+    }
+
+    p {
+        margin-top: 1.5rem;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-align: center;
+    }
+}

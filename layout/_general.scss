@@ -23,7 +23,9 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+    font: normal 400 16px/1.5 'Inter', sans-serif;
+    color: #000;
+    background-color: #fff;
 }
 
 ol, ul {
@@ -46,7 +48,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
-    min-height: 2000px; // aby było widać tło
+    //min-height: 4300px; // aby było widać tło
 }
 
 mark {
@@ -66,12 +68,19 @@ input, select, textarea {
 	appearance: none;
 }
 
-.container {
+.wrapper {
     position: relative;
     overflow: hidden;;
     //max-width: 1440px;
     width: 100%;
     //margin: 0 auto;
+}
+
+.main-content {
+    display: block;
+    max-width: 1600px;
+    width: 100%;
+    margin: 3.1rem auto 0 auto;
 }
 
 /* Elementy projektu */

@@ -1,6 +1,4 @@
 /* Compile Using Sass */
-/*@use 'base/base';*/
-/*@use 'components/button';*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -27,7 +25,9 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  line-height: 1;
+  font: normal 400 16px/1.5 "Inter", sans-serif;
+  color: #000;
+  background-color: #fff;
 }
 
 ol, ul {
@@ -50,7 +50,6 @@ table {
 
 body {
   -webkit-text-size-adjust: none;
-  min-height: 2000px;
 }
 
 mark {
@@ -69,10 +68,17 @@ input, select, textarea {
   appearance: none;
 }
 
-.container {
+.wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+.main-content {
+  display: block;
+  max-width: 1600px;
+  width: 100%;
+  margin: 3.1rem auto 0 auto;
 }
 
 /* Elementy projektu */
@@ -137,13 +143,6 @@ input, select, textarea {
   rotate: 200deg;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  line-height: 1.6;
-  color: #000;
-  background-color: #fff;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -184,7 +183,7 @@ body {
   border-radius: 5px;
   display: block;
 }
-@media (max-width: 719px) {
+@media (max-width: 720px) {
   .header__toggle {
     display: flex;
   }
@@ -209,9 +208,9 @@ body {
   justify-content: flex-end;
   transition: max-height 0.3s ease;
 }
-@media (max-width: 719px) {
+@media (max-width: 720px) {
   .header__nav .nav__list {
-    displaY: none !important;
+    display: none !important;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -222,7 +221,7 @@ body {
     width: 200px;
   }
 }
-@media (max-width: 719px) {
+@media (max-width: 720px) {
   .header__nav .nav__list.is-open {
     display: flex !important;
   }
@@ -230,15 +229,239 @@ body {
 .header__nav .nav__item a {
   display: block;
   padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: #333;
-}
-.header__nav .nav__item a:hover {
   font-weight: 500;
   font-style: medium;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
+  text-decoration: none;
   letter-spacing: 0;
-  vertical-align: middle;
+  color: #000;
+}
+.header__nav .nav__item a:hover {
   color: #2563EB;
+}
+
+@keyframes kreskiChange {
+  0% {
+    background-image: none;
+  }
+  33% {
+    background: url("imgs/Variant2.svg") no-repeat center/contain;
+  }
+  66% {
+    background: url("imgs/Variant3.svg") no-repeat center/contain;
+  }
+  100% {
+    background: url("imgs/Variant4.svg") no-repeat center/contain;
+  }
+}
+@keyframes obszarChange-1 {
+  0% {
+    background-image: none;
+  }
+  100% {
+    background: url("imgs/Group 10.svg") no-repeat center/contain;
+  }
+}
+@keyframes obszarChange-2 {
+  0% {
+    background-image: none;
+  }
+  100% {
+    background: url("imgs/Group 11.svg") no-repeat center/contain;
+  }
+}
+@keyframes obszarChange-3 {
+  0% {
+    background-image: none;
+  }
+  100% {
+    background: url("imgs/Group 8.svg") no-repeat center/contain;
+  }
+}
+@keyframes obszarChange-4 {
+  0% {
+    background-image: none;
+  }
+  100% {
+    background: url("imgs/Group 9.svg") no-repeat center/contain;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp-2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.kreski {
+  display: flex;
+  justify-content: center;
+  margin: 3.5rem auto 0 auto;
+  width: 152px;
+  height: 13px;
+  background: none no-repeat center/contain;
+  animation: kreskiChange 1500ms ease-out 1ms forwards;
+}
+.kreski img {
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.wspolpraca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem auto 0 auto;
+  width: 844px;
+  height: 366px;
+  opacity: 0;
+  animation: fadeInUp-2 2400ms ease-out 1700ms forwards;
+}
+.wspolpraca h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 600ms ease-out 650ms forwards;
+}
+.wspolpraca h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+  opacity: 0.75;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  opacity: 0;
+  animation: fadeInUp 600ms ease-out 950ms forwards;
+}
+
+.przycisk-wspolpraca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20.5rem;
+  height: 4.75rem;
+  border-radius: 50px;
+  background-color: #1B9AED;
+  transition: width 0.3s ease, height 0.3s ease;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeInUp 600ms ease-out 1250ms forwards;
+}
+.przycisk-wspolpraca a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+  transition: font-size 0.3s ease;
+}
+.przycisk-wspolpraca:hover {
+  width: 24rem;
+  height: 5.5rem;
+}
+.przycisk-wspolpraca:hover a {
+  font-size: 1.7rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 93rem;
+  margin: 0.62rem auto 0 auto;
+}
+.intro .obszar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+.intro #automatyzacja {
+  width: 54px;
+  height: 54px;
+  background: none no-repeat center/contain;
+  animation: obszarChange-1 100ms ease-out 2400ms forwards;
+}
+.intro #automatyzacja img {
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+.intro #ecommerce {
+  width: 59px;
+  height: 54px;
+  background: none no-repeat center/contain;
+  animation: obszarChange-2 100ms ease-out 2400ms forwards;
+}
+.intro #ecommerce img {
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+.intro #aplikacja {
+  width: 66px;
+  height: 66px;
+  background: none no-repeat center/contain;
+  animation: obszarChange-3 100ms ease-out 2400ms forwards;
+}
+.intro #aplikacja img {
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+.intro #uslugi {
+  width: 69.5px;
+  height: 59.2px;
+  background: none no-repeat center/contain;
+  animation: obszarChange-4 100ms ease-out 2400ms forwards;
+}
+.intro #uslugi img {
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+.intro h5 {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-top: 1.5rem;
+}
+.intro p {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

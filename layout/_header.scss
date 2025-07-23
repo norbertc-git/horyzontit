@@ -1,73 +1,63 @@
 @import '../abstracts/mixins';
 @import '../abstracts/breakpoints';
 
-body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-  color: #000;
-  background-color: #fff;
-}
-
-@import '../abstracts/mixins';
-@import '../abstracts/breakpoints';
-
 .header {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
   justify-content: space-between;
 
-  &__logo {
-    width: 303.36px;
-    height: 50.1px;
-    top: 43px;
-    left: 80px;
-    background: url('imgs/Group 14.svg') no-repeat left center;
-    background-size: contain;
-    img { visibility: hidden; width:100%; height:auto; }
-  }
-
-  &__toggle {
-    display: none;
-    align-items: center;
-    gap: 0.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    color: #333;
-    transition: transform 0.3s, opacity 0.3s;
-
-    .toggle-label { display: inline-block; }
-
-    .toggle-icon {
-      width: 50px;
-      height: 50px;
-      background-color: #2563EB;
-      border-radius: 5px;
-      display: block;
+    &__logo {
+      width: 303.36px;
+      height: 50.1px;
+      top: 43px;
+      left: 80px;
+      background: url('imgs/Group 14.svg') no-repeat left center;
+      background-size: contain;
+      img { visibility: hidden; width:100%; height:auto; }
     }
 
-    // show only on mobile
-    @include for-size(phone) {
-      display: flex;
-    }
+    &__toggle {
+      display: none;
+      align-items: center;
+      gap: 0.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #333;
+      transition: transform 0.3s, opacity 0.3s;
 
-    // kiedy menu otwarte
-    &.is-open {
-      .toggle-label { display: none; }
+      .toggle-label { display: inline-block; }
+
       .toggle-icon {
-        opacity: 0.33;
-        transform: rotate(45deg);
+        width: 50px;
+        height: 50px;
+        background-color: #2563EB;
+        border-radius: 5px;
+        display: block;
+      }
+
+      // show only on mobile
+      @include for-size(phone) {
+        display: flex;
+      }
+
+      // kiedy menu otwarte
+      &.is-open {
+      .toggle-label { display: none; }
+        .toggle-icon {
+          opacity: 0.33;
+          transform: rotate(45deg);
+        }
       }
     }
-  }
 
   &__nav {
     flex: 1;
     text-align: right;
 
-    .nav__list {
+      .nav__list {
       display: flex;
       list-style: none;
       gap: 2rem;
@@ -78,7 +68,7 @@ body {
 
       // mobile: ukryte domyślnie
       @include for-size(phone) {
-        displaY: none !important;
+        display: none !important;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -94,21 +84,20 @@ body {
           display: flex !important;
         }
       }
-    }
+  }
 
-    .nav__item a {
-      display: block;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      color: #333;
+  .nav__item a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 1rem;
+    line-height: 150%;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #000;
 
       &:hover {
-        font-weight: 500;
-        font-style: medium;
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: 0;
-        vertical-align: middle;
         color: #2563EB;
       }
     }
