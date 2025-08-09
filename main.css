@@ -81,7 +81,7 @@ input, select, textarea {
   margin: 3.1rem auto 0 auto;
 }
 
-/* Elementy projektu */
+/* Project elements */
 .bg-squares {
   position: absolute;
   top: 0;
@@ -241,7 +241,7 @@ input, select, textarea {
   color: #2563EB;
 }
 
-@keyframes kreskiChange {
+@keyframes linesChange {
   0% {
     background-image: none;
   }
@@ -255,7 +255,7 @@ input, select, textarea {
     background: url("imgs/Variant4.svg") no-repeat center/contain;
   }
 }
-@keyframes obszarChange-1 {
+@keyframes areaChange-1 {
   0% {
     background-image: none;
   }
@@ -263,7 +263,7 @@ input, select, textarea {
     background: url("imgs/Group 10.svg") no-repeat center/contain;
   }
 }
-@keyframes obszarChange-2 {
+@keyframes areaChange-2 {
   0% {
     background-image: none;
   }
@@ -271,7 +271,7 @@ input, select, textarea {
     background: url("imgs/Group 11.svg") no-repeat center/contain;
   }
 }
-@keyframes obszarChange-3 {
+@keyframes areaChange-3 {
   0% {
     background-image: none;
   }
@@ -279,7 +279,7 @@ input, select, textarea {
     background: url("imgs/Group 8.svg") no-repeat center/contain;
   }
 }
-@keyframes obszarChange-4 {
+@keyframes areaChange-4 {
   0% {
     background-image: none;
   }
@@ -305,22 +305,22 @@ input, select, textarea {
     opacity: 1;
   }
 }
-.kreski {
+.lines {
   display: flex;
   justify-content: center;
   margin: 3.5rem auto 0 auto;
   width: 152px;
   height: 13px;
   background: none no-repeat center/contain;
-  animation: kreskiChange 1500ms ease-out 1ms forwards;
+  animation: linesChange 1500ms ease-out 1ms forwards;
 }
-.kreski img {
+.lines img {
   visibility: hidden;
   width: 100%;
   height: auto;
 }
 
-.wspolpraca {
+.cooperation {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -330,7 +330,7 @@ input, select, textarea {
   opacity: 0;
   animation: fadeInUp-2 2400ms ease-out 1700ms forwards;
 }
-.wspolpraca h2 {
+.cooperation h2 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 4rem;
@@ -343,7 +343,7 @@ input, select, textarea {
   opacity: 0;
   animation: fadeInUp 600ms ease-out 650ms forwards;
 }
-.wspolpraca h3 {
+.cooperation h3 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -359,7 +359,7 @@ input, select, textarea {
   animation: fadeInUp 600ms ease-out 950ms forwards;
 }
 
-.przycisk-wspolpraca {
+.cooperation-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,7 +372,7 @@ input, select, textarea {
   opacity: 0;
   animation: fadeInUp 600ms ease-out 1250ms forwards;
 }
-.przycisk-wspolpraca a {
+.cooperation-button a {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -382,11 +382,11 @@ input, select, textarea {
   text-decoration: none;
   transition: font-size 0.3s ease;
 }
-.przycisk-wspolpraca:hover {
+.cooperation-button:hover {
   width: 24rem;
   height: 5.5rem;
 }
-.przycisk-wspolpraca:hover a {
+.cooperation-button:hover a {
   font-size: 1.7rem;
 }
 
@@ -397,7 +397,7 @@ input, select, textarea {
   max-width: 93rem;
   margin: 0.62rem auto 0 auto;
 }
-.intro .obszar {
+.intro .area {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,13 +405,13 @@ input, select, textarea {
   margin-top: 5rem;
   margin-bottom: 1rem;
 }
-.intro #automatyzacja {
+.intro #automatisation {
   width: 54px;
   height: 54px;
   background: none no-repeat center/contain;
-  animation: obszarChange-1 100ms ease-out 2400ms forwards;
+  animation: areaChange-1 100ms ease-out 2400ms forwards;
 }
-.intro #automatyzacja img {
+.intro #automatisation img {
   visibility: hidden;
   width: 100%;
   height: auto;
@@ -420,31 +420,31 @@ input, select, textarea {
   width: 59px;
   height: 54px;
   background: none no-repeat center/contain;
-  animation: obszarChange-2 100ms ease-out 2400ms forwards;
+  animation: areaChange-2 100ms ease-out 2400ms forwards;
 }
 .intro #ecommerce img {
   visibility: hidden;
   width: 100%;
   height: auto;
 }
-.intro #aplikacja {
+.intro #application {
   width: 66px;
   height: 66px;
   background: none no-repeat center/contain;
-  animation: obszarChange-3 100ms ease-out 2400ms forwards;
+  animation: areaChange-3 100ms ease-out 2400ms forwards;
 }
-.intro #aplikacja img {
+.intro #application img {
   visibility: hidden;
   width: 100%;
   height: auto;
 }
-.intro #uslugi {
+.intro #services {
   width: 69.5px;
   height: 59.2px;
   background: none no-repeat center/contain;
-  animation: obszarChange-4 100ms ease-out 2400ms forwards;
+  animation: areaChange-4 100ms ease-out 2400ms forwards;
 }
-.intro #uslugi img {
+.intro #services img {
   visibility: hidden;
   width: 100%;
   height: auto;

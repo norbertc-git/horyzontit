@@ -48,7 +48,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
-    //min-height: 4300px; // aby było widać tło
+    //min-height: 4300px; // so the backround is visible
 }
 
 mark {
@@ -83,13 +83,13 @@ input, select, textarea {
     margin: 3.1rem auto 0 auto;
 }
 
-/* Elementy projektu */
+/* Project elements */
 
 .bg-squares {
     position: absolute;
     top: 0;
     width: 100%; height: 100%;
-    pointer-events: none;    // nie blokuje klików
+    pointer-events: none;    // does not block clicks
     overflow: hidden;
     z-index: -2;
 }

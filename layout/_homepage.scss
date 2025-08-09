@@ -1,26 +1,26 @@
-@keyframes kreskiChange {
+@keyframes linesChange {
     0%   { background-image: none; }
     33%  { background: url('imgs/Variant2.svg') no-repeat center/contain; }
     66%  { background: url('imgs/Variant3.svg') no-repeat center/contain; }
     100% { background: url('imgs/Variant4.svg') no-repeat center/contain; }
 }
 
-@keyframes obszarChange-1 {
+@keyframes areaChange-1 {
     0%   { background-image: none; }
     100% { background: url('imgs/Group 10.svg') no-repeat center/contain; }
 }
 
-@keyframes obszarChange-2 {
+@keyframes areaChange-2 {
     0%   { background-image: none; }
     100% { background: url('imgs/Group 11.svg') no-repeat center/contain; }
 }
 
-@keyframes obszarChange-3 {
+@keyframes areaChange-3 {
     0%   { background-image: none; }
     100% { background: url('imgs/Group 8.svg') no-repeat center/contain; }
 }
 
-@keyframes obszarChange-4 {
+@keyframes areaChange-4 {
     0%   { background-image: none; }
     100% { background: url('imgs/Group 9.svg') no-repeat center/contain; }
 }
@@ -45,14 +45,14 @@
     }
 }
 
-.kreski {
+.lines {
     display: flex;
     justify-content: center;
     margin: 3.5rem auto 0 auto;
     width: 152px;
     height: 13px;
     background: none no-repeat center/contain;
-    animation: kreskiChange 1500ms ease-out 1ms forwards;
+    animation: linesChange 1500ms ease-out 1ms forwards;
 
     img {
         visibility: hidden;
@@ -61,7 +61,7 @@
   }
 }
 
-.wspolpraca {
+.cooperation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +101,7 @@
     }
 }
 
-.przycisk-wspolpraca {
+.cooperation-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +141,7 @@
     max-width: 93rem;
     margin: 0.62rem auto 0 auto;
 
-    .obszar {
+    .area {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -150,11 +150,11 @@
         margin-bottom: 1rem;
     }
 
-    #automatyzacja {
+    #automatisation {
         width: 54px;
         height: 54px;
         background: none no-repeat center/contain;
-        animation: obszarChange-1 100ms ease-out 2400ms forwards;
+        animation: areaChange-1 100ms ease-out 2400ms forwards;
             
         img {
             visibility: hidden;
@@ -167,7 +167,7 @@
         width: 59px;
         height: 54px;
         background: none no-repeat center/contain;
-        animation: obszarChange-2 100ms ease-out 2400ms forwards;
+        animation: areaChange-2 100ms ease-out 2400ms forwards;
 
         img {
             visibility: hidden;
@@ -176,11 +176,11 @@
         }
     }
 
-    #aplikacja {
+    #application {
         width: 66px;
         height: 66px;
         background: none no-repeat center/contain;
-        animation: obszarChange-3 100ms ease-out 2400ms forwards;
+        animation: areaChange-3 100ms ease-out 2400ms forwards;
 
         img {
             visibility: hidden;
@@ -189,11 +189,11 @@
         }
     }
 
-    #uslugi {
+    #services {
         width: 69.5px;
         height: 59.2px;
         background: none no-repeat center/contain;
-        animation: obszarChange-4 100ms ease-out 2400ms forwards;
+        animation: areaChange-4 100ms ease-out 2400ms forwards;
 
         img {
             visibility: hidden;
